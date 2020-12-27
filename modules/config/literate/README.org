@@ -120,3 +120,5 @@ your =DOOMDIR=). This behavior can be disabled with:
 ;; add to DOOMDIR/config.el
 (remove-hook 'org-mode-hook #'+literate-enable-recompile-h)
 #+END_SRC
+
+You can then tangle manually with =M-x +literate-recompile-maybe-h=
