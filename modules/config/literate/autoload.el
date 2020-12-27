@@ -81,10 +81,10 @@ byte-compiled from.")
 ;;;###autoload
 (defun +literate-enable-recompile-h ()
   "Enable literate-compiling-on-save in the current buffer."
-  (add-hook 'after-save-hook #'+literate-recompile-maybe-h nil 'local))
+  (add-hook 'after-save-hook #'+literate/recompile nil 'local))
 
 ;;;###autoload
-(defun +literate-recompile-maybe-h ()
+(defun +literate/recompile ()
   "Recompile literate config to `doom-private-dir'.
 
 We assume any org file in `doom-private-dir' is connected to your literate

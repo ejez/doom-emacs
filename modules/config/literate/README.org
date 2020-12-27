@@ -121,4 +121,4 @@ your =DOOMDIR=). This behavior can be disabled with:
 (remove-hook 'org-mode-hook #'+literate-enable-recompile-h)
 #+END_SRC
 
-You can then tangle manually with =M-x +literate-recompile-maybe-h=
+You can then use =M-x +literate/recompile= to manually tangle.
